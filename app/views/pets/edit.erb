@@ -10,7 +10,7 @@
   <br></br>
 
   <label>Choose an existing owner:</label>
-  <br></br>
+  <br>
 
   <% Owner.all.each do |owner| %>
     <input type="radio" name="pet[owner_id]" value="<%=owner.id%>" id="<%=owner.id%>" <%='checked' if @pet.owner == owner %>>
